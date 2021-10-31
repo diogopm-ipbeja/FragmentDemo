@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">FragmentDemo</string>
+    <string name="app_name" translatable="false">FragmentDemo</string>
+    <string name="start_btn">Start</string>
+    <string name="form_name">Name</string>
+    <string name="form_date_of_birth">Date of birth</string>
+    <string name="form_distance_from_home">Distance from home</string>
+    <string name="form_home_country">Home country</string>
+    <string name="form_submit">Submit</string>
+    <string name="finish_btn">Finish</string>
+
+    <string-array name="countries">
+        <item>Portugal</item>
+        <item>Angola</item>
+        <item>Mozambique</item>
+        <item>Georgia</item>
+        <item>Brazil</item>
+    </string-array>
+
+
+    <plurals name="distance">
+        <item quantity="zero">%d kilometers</item>
+        <item quantity="one">%d kilometer</item>
+        <item quantity="other">%d kilometers</item>
+    </plurals>
+
 </resources>

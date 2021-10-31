@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph.xml"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="pt.ipbeja.fragmentdemo.StartFragment"
+        android:label="start_fragment"
+        tools:layout="@layout/start_fragment" >
+        <action
+            android:id="@+id/action_startFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="pt.ipbeja.fragmentdemo.FormFragment"
+        android:label="fragment_form"
+        tools:layout="@layout/fragment_form" >
+        <action
+            android:id="@+id/action_formFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="pt.ipbeja.fragmentdemo.ResultFragment"
+        android:label="result_fragment"
+        tools:layout="@layout/result_fragment">
+
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="distance"
+            app:argType="integer" />
+        <argument android:name="dateOfBirth"
+            app:argType="java.util.Date" />
+        <argument
+            android:name="country"
+            app:argType="string" />
+    </fragment>
+</navigation>

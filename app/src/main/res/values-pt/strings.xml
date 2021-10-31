@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="countries">
+        <item>Portugal</item>
+        <item>Angola</item>
+        <item>Moçambique</item>
+        <item>Georgia</item>
+        <item>Brasil</item>
+    </string-array>
+
+
+    <plurals name="distance">
+        <item quantity="one">%d quilómetro</item>
+        <item quantity="other">%d quilómetros</item>
+    </plurals>
+
+    <string name="start_btn">Começar</string>
+    <string name="form_name">Nome</string>
+    <string name="form_date_of_birth">Data de nascimento</string>
+    <string name="form_distance_from_home">Distância de casa</string>
+    <string name="form_home_country">País natal</string>
+    <string name="form_submit">Submeter</string>
+    <string name="finish_btn">terminar</string>
+</resources>

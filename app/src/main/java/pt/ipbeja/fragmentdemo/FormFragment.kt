@@ -29,6 +29,16 @@ class FormFragment : Fragment() {
             maxValue = 5000
         }
 
+        with(binding.dobPicker) {
+            // Podemos limitar o intervalo de datas que o utilizador pode escolher
+            // Por ex. limitar a data máxima até há 18 anos atrás
+            // Cria-se uma instancia do Calendar (tem a data actual) e subtrai-se 18 anos
+            val maxDateAllowed = Calendar.getInstance().apply {
+                add(Calendar.YEAR, -18) }.time
+            maxDate = maxDateAllowed.time
+
+        }
+
         // Setup submit button
         binding.submitBtn.setOnClickListener {
 
